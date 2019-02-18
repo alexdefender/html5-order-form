@@ -1,1 +1,1 @@
-[Demo](https://alexdefender.github.io/google-style-popup/)
+[Demo](https://alexdefender.github.io/)
