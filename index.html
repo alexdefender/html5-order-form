@@ -4,72 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <title>HTML5 Order Form</title>
   </head>
   <body>
-    <header>
+    <header class="document__header">
       <nav>
-        <ul>
+        <ul class="header__nav__items">
           <li class="header__back">
-            <button>GO BACK</button>
+            <button class="btn">Go back</button>
           </li>
-          <li class="header__logo">LOGO</li>
+          <li class="header__logo">
+            <img src="img/logo.jpg" />
+          </li>
           <li class="header__sing-in">
-            <button>SING IN</button>
+            <button class="btn">Sing in</button>
           </li>
         </ul>
       </nav>
     </header>
     <main class="wrapper">
-    <form id="wrapper_form">
-      <div class="order">
-        <section class="order__table">
-          <table>
-            <caption class="order__caption">
-              <h2>YOUR ORDER</h2>
-            </caption>
-            <tr>
-              <th>ITEMS</th>
-              <th>DETAILS</th>
-              <th>PRICE</th>
-              <th>DELIVERY</th>
-            </tr>
-            <tr>
-              <td>2 documents</td>
-              <td>2 languages</td>
-              <td>$ 696.06</td>
-              <td>48 hours*</td>
-            </tr>
-          </table>
-        </section>
-        <section class="order__btn">
-          <button>PLACE ORDER</button>
-          <button>PRINT A QUOTE</button>
-        </section>
-        <section class="order__help-center">
-          <h2>HELP CENTER</h2>
-          <p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
-          <address>
-            <a href="+971(0)555 555">+971(0)555 555</a>
-            <a href="mailto:help@qtest.com">help@qtest.com</a>
-          </address>
-        </section>
-      </div>
+      <form id="wrapper_form">
+        <div class="order">
+          <section class="order__table">
+            <table>
+              <caption class="order__caption">
+                <h2>YOUR ORDER</h2>
+              </caption>
+              <tr>
+                <th>ITEMS</th>
+                <th>DETAILS</th>
+                <th>PRICE</th>
+                <th>DELIVERY</th>
+              </tr>
+              <tr>
+                <td>2 documents</td>
+                <td>2 languages</td>
+                <td>$ 696.06</td>
+                <td>48 hours*</td>
+              </tr>
+            </table>
+          </section>
+          <section class="order__btn">
+            <button class="btn">Place order</button>
+            <button class="btn">Print a quote</button>
+          </section>
+          <section class="order__help-center">
+            <h2>HELP CENTER</h2>
+            <p>
+              If you need assistance while placing your order, contact one of
+              our beloved Project Manager by phone or email.
+            </p>
+            <address>
+              <a href="+971(0)555 555">+971(0)555 555</a>
+              <a href="mailto:help@qtest.com">help@qtest.com</a>
+            </address>
+          </section>
+        </div>
 
-      <section class="translate"></section>
+        <section class="translate">111</section>
 
-      <section class="upload"></section>
+        <section class="upload"></section>
 
-      <section class="languages"></section>
+        <section class="languages"></section>
 
-      <section class="tone"></section>
+        <section class="tone"></section>
 
-      <section class="urgent"></section>
+        <section class="urgent"></section>
 
-      <section class="payment"></section>
-
-    </form>
-
+        <section class="payment"></section>
+      </form>
+    </main>
     <footer></footer>
   </body>
 </html>
