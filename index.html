@@ -26,36 +26,38 @@
     <main class="wrapper">
       <form id="wrapper_form">
         <div class="order">
-          <section class="order__table">
-            <table>
+          <section class="wrapper__order">
+            <table class="order__table">
               <caption class="order__caption">
-                <h2>YOUR ORDER</h2>
+                <h2 class="order__header">Your order</h2>
               </caption>
-              <tr>
-                <th>ITEMS</th>
-                <th>DETAILS</th>
-                <th>PRICE</th>
-                <th>DELIVERY</th>
-              </tr>
-              <tr>
-                <td>2 documents</td>
-                <td>2 languages</td>
-                <td>$ 696.06</td>
-                <td>48 hours*</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th class="order__th">Items</th>
+                  <th class="order__th">Details</th>
+                  <th class="order__th">Price</th>
+                  <th class="order__th">Delivery</th>
+                </tr>
+                <tr>
+                  <td class="order__td">2 documents</td>
+                  <td class="order__td">2 languages</td>
+                  <td class="order__td">$ 696.06</td>
+                  <td class="order__td">48 hours*</td>
+                </tr>
+              </tbody>
             </table>
           </section>
-          <section class="order__btn">
-            <button class="btn">Place order</button>
-            <button class="btn">Print a quote</button>
+          <section class="order__btns">
+            <button class="btn order__btn order__btn__active">Place order</button>
+            <button class="btn order__btn">Print a quote</button>
           </section>
-          <section class="order__help-center">
-            <h2>HELP CENTER</h2>
-            <p>
+          <section class="order__help">
+            <h2 class="help__h2">Help center</h2>
+            <p class="help__text">
               If you need assistance while placing your order, contact one of
               our beloved Project Manager by phone or email.
             </p>
-            <address>
+            <address class="help__address">
               <a href="+971(0)555 555">+971(0)555 555</a>
               <a href="mailto:help@qtest.com">help@qtest.com</a>
             </address>

@@ -1,82 +1,147 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #ebedf2;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 10pt;
+  background-color: #ebedf2;
+  box-sizing: border-box;
 }
 
 .document__header {
-    max-width: 1000px;
-    margin: 30px auto 30px auto;
+  max-width: 1000px;
+  margin: 30px auto 30px auto;
 }
 
 .header__nav__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .btn {
-    background-color: #ebedf2;
-    border: 1px solid #cad1e0;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 15px 25px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    color: #a5abc4;
-    margin: 10px;
+  background-color: #ebedf2;
+  border: 1px solid #cad1e0;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 15px;
+  width: 130px;
+  text-transform: uppercase;
+  color: #a5abc4;
 }
 
 .header__back {
-    
 }
 
 .header__logo {
-    
 }
 
 .header__sing-in {
-    
 }
 
-/* ----- Start Form ------ */
+/* ---------- Start Form ---------- */
 
 #wrapper_form {
-    max-width: 1050px;
-    background: #ffffff;
-    margin: auto;
-    border: 1px solid #cad1e0;
-    border-radius: 3px;
-    box-sizing: border-box;
+  max-width: 1050px;
+  background: #ffffff;
+  margin: auto;
+  border: 1px solid #cad1e0;
+  border-radius: 3px;
+  color: #6e768f;
 }
 
+/* ---------- Start Order ---------- */
+
 .order {
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom: 2px solid #cad1e0; 
-    
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #cad1e0;
+}
+
+.wrapper__order {
+  flex-basis: 480px;
+  padding-top: 10px;
+  padding-left: 30px;
+  margin: 0 10px 10px 0;
 }
 
 .order__table {
-    flex-basis: 500px;
-    padding: 10px;
+  width: 100%;
+  padding-left: 40px;
+}
+
+.order__caption {
+  background: url(../font/icon-table.png) no-repeat center left;
+}
+
+.order__header {
+  text-align: left;
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+
+.order__th {
+  text-align: left;
+}
+
+.order__td {
+  text-align: left;
+  padding-top: 10px;
+  color: #a5abc4;
+}
+
+/* ---------- End Order ---------- */
+
+/* ---------- Start Buttons ---------- */
+
+.order__btns {
+  flex-basis: 200px;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
 .order__btn {
-    flex-basis: 200px;
-    flex-direction: column;
-    margin: 20px auto 20px auto;
-    
+  background-color: #f7f7fa;
+  margin: 5px;
 }
 
-.order__help-center {
-    flex-basis: 300px;
-    padding: 10px;
-    border-left: 2px solid #cad1e0;
-    
+.order__btn__active,
+.order__btn:active {
+  background-color: #61c9c4;
+  color: #fcfcfc;
 }
+
+/* ---------- End Buttons ---------- */
+
+/* ---------- Start Help ---------- */
+
+.order__help {
+  flex-basis: 300px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-left: 2px solid #cad1e0;
+}
+
+.help__h2 {
+  text-transform: uppercase;
+}
+
+.help__h2::before {
+  content: "\2706";
+  padding-right: 17px;
+  /* background: url(../font/icon-help.png) no-repeat; */
+}
+
+.help__text {
+  padding-left: 35px;
+}
+
+.help__address {
+  padding-left: 35px;
+  padding-bottom: 10px;
+}
+
+/* ---------- End Help ---------- */
