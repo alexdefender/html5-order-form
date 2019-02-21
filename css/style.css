@@ -8,7 +8,7 @@ body {
 }
 
 .document__header {
-  max-width: 1000px;
+  max-width: 950px;
   margin: 30px auto 30px auto;
 }
 
@@ -42,10 +42,10 @@ body {
 .header__sing-in {
 }
 
-/* ---------- Start Form ---------- */
+/* ----------------- Start Form ----------------- */
 
-#wrapper_form {
-  max-width: 1050px;
+#form__wrapper {
+  max-width: 1000px;
   background: #ffffff;
   margin: auto;
   border: 1px solid #cad1e0;
@@ -53,16 +53,18 @@ body {
   color: #6e768f;
 }
 
-/* ---------- Start Order ---------- */
+/* ----------------- Start Order DIV ----------------- */
 
-.order {
+.order__wrapper {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 2px solid #cad1e0;
 }
 
-.wrapper__order {
-  flex-basis: 480px;
+/* ---------- Start Order Section ---------- */
+
+.order {
+  width: 480px;
   padding-top: 10px;
   padding-left: 30px;
   margin: 0 10px 10px 0;
@@ -93,12 +95,12 @@ body {
   color: #a5abc4;
 }
 
-/* ---------- End Order ---------- */
+/* ---------- End Order Section ---------- */
 
-/* ---------- Start Buttons ---------- */
+/* ---------- Start Buttons Section ---------- */
 
 .order__btns {
-  flex-basis: 200px;
+  width: 160px;
   flex-direction: column;
   padding-top: 20px;
 }
@@ -114,29 +116,35 @@ body {
   color: #fcfcfc;
 }
 
-/* ---------- End Buttons ---------- */
+/* ---------- End Buttons Section ---------- */
 
-/* ---------- Start Help ---------- */
+/* ---------- Start Help Section ---------- */
 
 .order__help {
-  flex-basis: 300px;
+  width: 270px;
   padding-top: 10px;
   padding-left: 20px;
   border-left: 2px solid #cad1e0;
 }
 
 .help__h2 {
+  position: relative;
   text-transform: uppercase;
+  padding-left: 35px;
 }
 
-.help__h2::before {
-  content: "\2706";
-  padding-right: 17px;
-  /* background: url(../font/icon-help.png) no-repeat; */
+.icon-help {
+  background: url(../font/icon-help.png) no-repeat;
+  height: 25px;
+  width: 25px;
+  left: 0px;
+  position: absolute;
 }
 
 .help__text {
+  width: 270px;
   padding-left: 35px;
+  line-height: 1.5;
 }
 
 .help__address {
@@ -144,4 +152,102 @@ body {
   padding-bottom: 10px;
 }
 
-/* ---------- End Help ---------- */
+.help__address a {
+  color: black;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.help__address a:first-child {
+  margin-right: 20px;
+}
+
+/* ---------- End Help Section ---------- */
+
+/* ----------------- End Order DIV ----------------- */
+
+
+
+/* ----------------- Start Translate ----------------- */
+
+.translate {
+  margin: 20px;
+}
+
+.translate__h2 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+.translate__h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: -10px;
+  width: 44%;
+  left: 28%;
+  height: 1px;
+  background: #cad1e0;
+}
+
+.translate__field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 0 none;
+}
+
+.translate__input {
+  width: 0px;
+  height: 0px;
+}
+
+.translate__img-wrapper {
+  position: relative;
+  border: 1px solid #cad1e0;
+  border-radius: 4px;
+  padding: 30px 60px;
+  background-color: #f7f7fa;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.translate__text {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.translate__img-wrapper:hover {
+  border: 1px solid #77a8e0;
+  box-shadow: 0 0 10px 0 #cad1e0;
+  -webkit-box-shadow: 0 0 10px 0 #cad1e0;
+  -moz-box-shadow: 0 0 10px 0 #cad1e0;
+}
+
+input[type="radio"]:checked + .translate__img-wrapper {
+  border: 1px solid #77a8e0;
+  box-shadow: inset 0 0 3px 3px #77a8e0;
+}
+
+input[type="radio"]:checked + .translate__img-wrapper::after {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  content: '\2714';
+  font-size: 20px;
+  border: 1px solid #77a8e0;
+  color: #ffffff;
+  background: #77a8e0;
+  border-radius: 50px;
+  width: 24px;
+  text-align: center;
+}
+
+/* ----------------- End Translate ----------------- */

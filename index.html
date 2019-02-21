@@ -24,9 +24,9 @@
       </nav>
     </header>
     <main class="wrapper">
-      <form id="wrapper_form">
-        <div class="order">
-          <section class="wrapper__order">
+      <form id="form__wrapper" method="POST">
+        <div class="order__wrapper">
+          <section class="order">
             <table class="order__table">
               <caption class="order__caption">
                 <h2 class="order__header">Your order</h2>
@@ -48,11 +48,13 @@
             </table>
           </section>
           <section class="order__btns">
-            <button class="btn order__btn order__btn__active">Place order</button>
-            <button class="btn order__btn">Print a quote</button>
+            <button class="btn order__btn order__btn__active" type="button">
+              Place order
+            </button>
+            <button class="btn order__btn" type="button">Print a quote</button>
           </section>
           <section class="order__help">
-            <h2 class="help__h2">Help center</h2>
+            <h2 class="help__h2"><span class="icon-help"></span>Help center</h2>
             <p class="help__text">
               If you need assistance while placing your order, contact one of
               our beloved Project Manager by phone or email.
@@ -64,7 +66,32 @@
           </section>
         </div>
 
-        <section class="translate">111</section>
+        <section class="translate">
+          <h2 class="translate__h2">Select what you want to translate</h2>
+          <div class="translate__field">
+            <label class="translate__select">
+              <input type="radio" name="translate-type" value="website" class="translate__input" required>
+              <div class="translate__img-wrapper">
+                <img src="img/translate-1.jpg" />
+                <span class="translate__text">Website</span>
+              </div>
+            </label>
+            <label class="translate__select">
+              <input type="radio" name="translate-type" value="document" class="translate__input" required checked>
+              <div class="translate__img-wrapper">
+                <img src="img/translate-2.jpg" />
+                <span class="translate__text">Documents</span>
+              </div>
+            </label>
+            <label class="translate__select">
+              <input type="radio" name="translate-type" value="social-account" class="translate__input" required>
+              <div class="translate__img-wrapper">
+                <img src="img/translate-3.jpg" />
+                <span class="translate__text">Social Account</span>
+              </div>
+            </label>
+          </div>
+        </section>
 
         <section class="upload"></section>
 
