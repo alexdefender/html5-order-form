@@ -53,7 +53,7 @@ body {
   color: #6e768f;
 }
 
-.number__header::before {
+.header__number::before {
   margin-left: -50px;
   margin-right: 10px;
   border: 1px solid #b9bdc7;
@@ -71,11 +71,34 @@ body {
 }
 
 .td {
+  position: relative;
   text-align: left;
   padding-top: 10px;
   color: #a5abc4;
 }
 
 .icon {
-  
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 24px;
+  width: 26px;
+  left: 25px;
+  top: 16px;
+  position: absolute;
+}
+
+.btn__delete {
+  background-image: url(../font/icon-delete.png);
+  background-repeat: no-repeat;
+  height: 23px;
+  width: 20px;
+  border: none;
+}
+
+
+
+
+footer {
+  margin: 100px;
 }

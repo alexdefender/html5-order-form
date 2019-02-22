@@ -1,0 +1,12 @@
+.payment {
+  margin-top: 50px;
+  margin-left: 93px;
+}
+
+.payment__header {
+  margin-bottom: 50px;
+}
+
+.payment__header::before {
+  content: "3";
+}

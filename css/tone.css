@@ -1,0 +1,12 @@
+.tone {
+  margin-top: 50px;
+  margin-left: 93px;
+}
+
+.tone__header {
+  margin-bottom: 50px;
+}
+
+.tone__header::before {
+  content: "3";
+}

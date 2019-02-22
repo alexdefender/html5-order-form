@@ -113,7 +113,7 @@
         </section>
 
         <section class="upload">
-          <h2 class="upload__header number__header">
+          <h2 class="upload__header header__number">
             Upload you documents
             <span class="upload__doc-format"
               >(Doc, Docx, Text, PDF, Markdown)</span
@@ -124,11 +124,13 @@
             <input
               type="file"
               name="file"
-              class="upload__file upload__file-hidden"
+              class="upload__file-hidden"
               accept=".pdf"
               required
             />
-            <span class="upload__file-label">Upload new file</span>
+            <span class="upload__file"
+              ><span class="icon upload__icon"></span>Upload new file</span
+            >
           </label>
 
           <table class="table upload__table">
@@ -140,32 +142,88 @@
                 <th class="th">Remove</th>
               </tr>
               <tr>
-                <td class="td upload__td">business_operations.docx</td>
-                <td class="td upload__td">78kb</td>
-                <td class="td upload__td">842</td>
-                <td class="td upload__td">_</td>
+                <td class="td upload__td__doc">
+                  <span class="icon upload__icon__doc"></span
+                  >business_operations.docx
+                </td>
+                <td class="td">78kb</td>
+                <td class="td">842</td>
+                <td class="td">
+                  <button class="btn__delete" type="button"></button>
+                </td>
               </tr>
               <tr>
-                <td class="td upload__td ">business_financial.docx</td>
-                <td class="td upload__td">26kb</td>
-                <td class="td upload__td">2,326</td>
-                <td class="td upload__td">_</td>
+                <td class="td upload__td__doc">
+                  <span class="icon upload__icon__doc"></span
+                  >business_financial.docx
+                </td>
+                <td class="td">26kb</td>
+                <td class="td">2,326</td>
+                <td class="td">
+                  <button class="btn__delete" type="button"></button>
+                </td>
               </tr>
             </tbody>
           </table>
         </section>
 
-        <section class="languages"></section>
+        <section class="language">
+          <h2 class="language__header header__number">
+            Choose your languages pairings
+          </h2>
+          <div class="language__wrapper">
+            <label for="language-select">From</label>
+            <div>
+              <select id="language-select">
+                <option value="dog">English</option>
+                <option value="cat">Arabic</option>
+                <option value="hamster">Kurdish</option>
+              </select>
+            </div>   
+          </div>
 
-        <section class="tone"></section>
+          <div class="language__wrapper">
+              <label for="language-select">To</label>
+              <div>
+                <select id="language-select">
+                  <option value="dog">English</option>
+                  <option value="cat">Arabic</option>
+                  <option value="hamster">Kurdish</option>
+                </select>
+              </div>
+              <div>
+                  <select id="language-select">
+                    <option value="dog">English</option>
+                    <option value="cat">Arabic</option>
+                    <option value="hamster">Kurdish</option>
+                  </select>
+                </div>
+                
+                <button class="btn__delete" type="button"></button>
 
-        <section class="urgent"></section>
+                <button class="btn" type="button"></button>
 
-        <section class="payment"></section>
+            </div>
+          <div></div>
+        </section>
 
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
+        <section class="tone">
+          <h2 class="tone__header header__number">
+            Select your desired tone
+          </h2>
+        </section>
+
+        <section class="urgent">
+          <h2 class="urgent__header header__number">
+            Tell us how urgent this job is
+          </h2>
+        </section>
+
+        <section class="payment">
+          <h2 class="payment__header header__number">
+            Sign up and choose a payment method
+          </h2>
+        </section>
       </form>
     </main>
     <footer></footer>

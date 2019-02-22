@@ -1,0 +1,12 @@
+.language {
+  margin-top: 50px;
+  margin-left: 93px;
+}
+
+.language__header {
+  margin-bottom: 50px;
+}
+
+.language__header::before {
+  content: "2";
+}
