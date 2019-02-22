@@ -27,22 +27,22 @@
       <form id="form__wrapper" method="POST">
         <div class="order__wrapper">
           <section class="order">
-            <table class="order__table">
+            <table class="table">
               <caption class="order__caption">
-                <h2 class="order__header">Your order</h2>
+                <h3 class="order__header">Your order</h3>
               </caption>
               <tbody>
                 <tr>
-                  <th class="order__th">Items</th>
-                  <th class="order__th">Details</th>
-                  <th class="order__th">Price</th>
-                  <th class="order__th">Delivery</th>
+                  <th class="th">Items</th>
+                  <th class="th">Details</th>
+                  <th class="th">Price</th>
+                  <th class="th">Delivery</th>
                 </tr>
                 <tr>
-                  <td class="order__td">2 documents</td>
-                  <td class="order__td">2 languages</td>
-                  <td class="order__td">$ 696.06</td>
-                  <td class="order__td">48 hours*</td>
+                  <td class="td">2 documents</td>
+                  <td class="td">2 languages</td>
+                  <td class="td">$ 696.06</td>
+                  <td class="td">48 hours*</td>
                 </tr>
               </tbody>
             </table>
@@ -54,7 +54,7 @@
             <button class="btn order__btn" type="button">Print a quote</button>
           </section>
           <section class="order__help">
-            <h2 class="help__h2"><span class="icon-help"></span>Help center</h2>
+            <h3 class="help__h3"><span class="icon-help"></span>Help center</h3>
             <p class="help__text">
               If you need assistance while placing your order, contact one of
               our beloved Project Manager by phone or email.
@@ -70,21 +70,40 @@
           <h2 class="translate__h2">Select what you want to translate</h2>
           <div class="translate__field">
             <label class="translate__select">
-              <input type="radio" name="translate-type" value="website" class="translate__input" required>
+              <input
+                type="radio"
+                name="translate-type"
+                value="website"
+                class="translate__input"
+                required
+              />
               <div class="translate__img-wrapper">
                 <img src="img/translate-1.jpg" />
                 <span class="translate__text">Website</span>
               </div>
             </label>
             <label class="translate__select">
-              <input type="radio" name="translate-type" value="document" class="translate__input" required checked>
+              <input
+                type="radio"
+                name="translate-type"
+                value="document"
+                class="translate__input"
+                required
+                checked
+              />
               <div class="translate__img-wrapper">
                 <img src="img/translate-2.jpg" />
                 <span class="translate__text">Documents</span>
               </div>
             </label>
             <label class="translate__select">
-              <input type="radio" name="translate-type" value="social-account" class="translate__input" required>
+              <input
+                type="radio"
+                name="translate-type"
+                value="social-account"
+                class="translate__input"
+                required
+              />
               <div class="translate__img-wrapper">
                 <img src="img/translate-3.jpg" />
                 <span class="translate__text">Social Account</span>
@@ -93,7 +112,48 @@
           </div>
         </section>
 
-        <section class="upload"></section>
+        <section class="upload">
+          <h2 class="upload__header number__header">
+            Upload you documents
+            <span class="upload__doc-format"
+              >(Doc, Docx, Text, PDF, Markdown)</span
+            >
+          </h2>
+
+          <label>
+            <input
+              type="file"
+              name="file"
+              class="upload__file upload__file-hidden"
+              accept=".pdf"
+              required
+            />
+            <span class="upload__file-label">Upload new file</span>
+          </label>
+
+          <table class="table upload__table">
+            <tbody>
+              <tr>
+                <th class="th">File name</th>
+                <th class="th">File size</th>
+                <th class="th">Number of words</th>
+                <th class="th">Remove</th>
+              </tr>
+              <tr>
+                <td class="td upload__td">business_operations.docx</td>
+                <td class="td upload__td">78kb</td>
+                <td class="td upload__td">842</td>
+                <td class="td upload__td">_</td>
+              </tr>
+              <tr>
+                <td class="td upload__td ">business_financial.docx</td>
+                <td class="td upload__td">26kb</td>
+                <td class="td upload__td">2,326</td>
+                <td class="td upload__td">_</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
         <section class="languages"></section>
 
@@ -102,6 +162,10 @@
         <section class="urgent"></section>
 
         <section class="payment"></section>
+
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
       </form>
     </main>
     <footer></footer>

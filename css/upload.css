@@ -1,0 +1,61 @@
+.upload {
+  margin-top: 50px;
+  margin-left: 93px;
+}
+
+.upload__header {
+    margin-bottom: 50px;
+}
+
+.upload__header::before {
+  content: "1";
+}
+
+.upload__doc-format {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.upload__file-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.upload__file-label {
+  cursor: pointer;
+  border: 1px solid #d7dae0;
+  border-radius: 5px;
+  background-color: #f7f7fa;
+  padding: 15px 25px;
+  padding-left: 70px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.upload__file-label::before {
+  content: '';
+  background-image: url(../font/icon-upload.png);
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 28px;
+  left: 25px;
+  top: 12px;
+  position: absolute;
+}
+
+.upload__table {
+  margin-top: 50px;
+  padding: 25px;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  width: 800px;
+  min-width: 500px;
+}
+
+

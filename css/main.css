@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 10pt;
+  background-color: #ebedf2;
+  box-sizing: border-box;
+}
+
+.document__header {
+  max-width: 950px;
+  margin: 30px auto 30px auto;
+}
+
+.header__nav__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.btn {
+  background-color: #ebedf2;
+  border: 1px solid #cad1e0;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 15px;
+  width: 130px;
+  text-transform: uppercase;
+  color: #a5abc4;
+}
+
+.header__back {
+}
+
+.header__logo {
+}
+
+.header__sing-in {
+}
+
+/* ----------------- Start Form ----------------- */
+
+#form__wrapper {
+  max-width: 1000px;
+  background: #ffffff;
+  margin: auto;
+  border: 1px solid #cad1e0;
+  border-radius: 3px;
+  color: #6e768f;
+}
+
+.number__header::before {
+  margin-left: -50px;
+  margin-right: 10px;
+  border: 1px solid #b9bdc7;
+  border-radius: 50%;
+  padding: 5px 10px 5px 10px;
+}
+
+.table {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.th {
+  text-align: left;
+}
+
+.td {
+  text-align: left;
+  padding-top: 10px;
+  color: #a5abc4;
+}
+
+.icon {
+  
+}
