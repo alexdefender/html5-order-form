@@ -172,39 +172,58 @@
             Choose your languages pairings
           </h2>
           <div class="language__wrapper">
-            <label for="language-select">From</label>
-            <div>
-              <select id="language-select">
-                <option value="dog">English</option>
-                <option value="cat">Arabic</option>
-                <option value="hamster">Kurdish</option>
+            <label for="language-select">FROM</label>
+            <div class="language-select__wrapper">
+              <select
+                name="languange"
+                id="language-select"
+                class="language-select"
+                required
+              >
+                <option value="">Language</option>
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+                <option value="kurdish">Kurdish</option>
               </select>
-            </div>   
+            </div>
           </div>
 
           <div class="language__wrapper">
-              <label for="language-select">To</label>
-              <div>
-                <select id="language-select">
-                  <option value="dog">English</option>
-                  <option value="cat">Arabic</option>
-                  <option value="hamster">Kurdish</option>
-                </select>
-              </div>
-              <div>
-                  <select id="language-select">
-                    <option value="dog">English</option>
-                    <option value="cat">Arabic</option>
-                    <option value="hamster">Kurdish</option>
-                  </select>
-                </div>
-                
-                <button class="btn__delete" type="button"></button>
-
-                <button class="btn" type="button"></button>
-
+            <label class="language__label__to" for="language-select-2">TO</label>
+            <div class="language-select__wrapper">
+              <select
+                name="languange"
+                id="language-select-2"
+                class="language-select"
+                required
+              >
+                <option value="">Language</option>
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+                <option value="kurdish">Kurdish</option>
+              </select>
             </div>
-          <div></div>
+            <div class="language-select__wrapper">
+              <select
+                name="languange"
+                id="language-select-3"
+                class="language-select"
+                required
+              >
+                <option value="">Language</option>
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+                <option value="kurdish">Kurdish</option>
+              </select>
+            </div>
+
+            <button class="btn__delete" type="button"></button>
+
+            <button class="btn languange-btn" type="button">+ ADD</button>
+          </div>
+
+            
+          
         </section>
 
         <section class="tone">
