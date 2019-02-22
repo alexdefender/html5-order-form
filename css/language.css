@@ -34,7 +34,9 @@
   appearance: none;
 }
 
-.language-select:hover {
+.language-select:hover,
+.languange-btn:hover,
+.language-select__wrapper:hover {
   border-color: #77a8e0;
   will-change: border-color;
   transition: border-color 0.3s ease-out;
@@ -47,12 +49,6 @@
   margin-top: 10px;
   position: relative;
   overflow: hidden;
-}
-
-.language-select__wrapper:hover {
-  border-color: #77a8e0;
-  will-change: border-color;
-  transition: border-color 0.3s ease-out;
 }
 
 .language-select__wrapper::after {
@@ -80,4 +76,5 @@
   width: 70px;
   margin-top: 10px;
   background-color: #f7f7fa;
+  cursor: pointer;
 }

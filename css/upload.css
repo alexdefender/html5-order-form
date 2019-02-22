@@ -38,6 +38,13 @@
   position: relative;
 }
 
+.upload__file:hover {
+  border-color: #77a8e0;
+  will-change: border-color;
+  transition: border-color 0.3s ease-out;
+  cursor: pointer;
+}
+
 .upload__icon{
   background-image: url(../font/icon-upload.png);
 }

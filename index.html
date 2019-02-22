@@ -149,7 +149,7 @@
                 <td class="td">78kb</td>
                 <td class="td">842</td>
                 <td class="td">
-                  <button class="btn__delete" type="button"></button>
+                  <button class="btn__remove" type="button"></button>
                 </td>
               </tr>
               <tr>
@@ -160,7 +160,7 @@
                 <td class="td">26kb</td>
                 <td class="td">2,326</td>
                 <td class="td">
-                  <button class="btn__delete" type="button"></button>
+                  <button class="btn__remove" type="button"></button>
                 </td>
               </tr>
             </tbody>
@@ -189,7 +189,9 @@
           </div>
 
           <div class="language__wrapper">
-            <label class="language__label__to" for="language-select-2">TO</label>
+            <label class="language__label__to" for="language-select-2"
+              >TO</label
+            >
             <div class="language-select__wrapper">
               <select
                 name="languange"
@@ -217,20 +219,61 @@
               </select>
             </div>
 
-            <button class="btn__delete" type="button"></button>
+            <button class="btn__remove" type="button"></button>
 
             <button class="btn languange-btn" type="button">+ ADD</button>
           </div>
-
-            
-          
         </section>
 
         <section class="tone">
           <h2 class="tone__header header__number">
             Select your desired tone
           </h2>
+
+          <div class="tone__field">
+            <label class="tone__select">
+              <input
+                type="radio"
+                name="tone-type"
+                value="friendly-casual"
+                class="tone__input"
+                required
+              />
+
+              <span class="tone__text icon tone__icon tone__icon-fc"
+                >Friendly / Casual</span
+              >
+            </label>
+            <label class="tone__select">
+              <input
+                type="radio"
+                name="tone-type"
+                value="comporate-pro"
+                class="tone__input"
+                required
+              />
+              <span class="tone__text tone__text-cp icon tone__icon tone__icon-cp"
+                >Comporate / Pro</span
+              >
+            </label>
+            <label class="tone__select">
+              <input
+                type="radio"
+                name="tone-type"
+                value="media-format"
+                class="tone__input"
+                required
+              />
+
+              <span class="tone__text tone__text-mf icon tone__icon tone__icon-mf"
+                >Media / Formal</span
+              >
+            </label>
+          </div>
         </section>
+
+
+
 
         <section class="urgent">
           <h2 class="urgent__header header__number">
