@@ -21,6 +21,27 @@ body {
   padding-inline-start: 0;
 }
 
+.icon {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 70%;
+  height: 24px;
+  width: 26px;
+  left: 25px;
+  top: 16px;
+  position: absolute;
+}
+
+.icon__back {
+  background-image: url(../font/icon-back.png);
+  left: 20px;
+}
+
+.icon__sing-in {
+  background-image: url(../font/icon-sing-in.png);
+  top: 12px;
+}
+
 .btn {
   background-color: #ebedf2;
   border: 1px solid #cad1e0;
@@ -33,13 +54,16 @@ body {
   color: #a5abc4;
 }
 
-.header__back {
+.btn:hover {
+  border-color: #77a8e0;
+  will-change: border-color;
+  transition: border-color 0.3s ease-out;
+  cursor: pointer;
 }
 
-.header__logo {
-}
-
+.header__back,
 .header__sing-in {
+  position: relative;
 }
 
 /* ----------------- Start Form ----------------- */
@@ -77,17 +101,6 @@ body {
   color: #a5abc4;
 }
 
-.icon {
-  content: "";
-  background-repeat: no-repeat;
-  background-size: 70%;
-  height: 24px;
-  width: 26px;
-  left: 25px;
-  top: 16px;
-  position: absolute;
-}
-
 .btn__remove {
   background-image: url(../font/icon-remove.png);
   background-repeat: no-repeat;
@@ -98,6 +111,19 @@ body {
   cursor: pointer;
 }
 
+.tone__urgent__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.translate__input:focus + .translate__img-wrapper,
+.upload__file-hidden:focus + .upload__file,
+.tone__input:focus + .tone__text,
+.translate__input:focus + .payment__img,
+.language-select:focus {
+  outline: 2px solid #77a8e0; 
+}
 
 footer {
   margin: 100px;

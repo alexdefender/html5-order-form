@@ -30,6 +30,7 @@
 .translate__input {
   width: 0px;
   height: 0px;
+  margin: -1px;
 }
 
 .translate__img-wrapper {
@@ -59,14 +60,17 @@
   -moz-box-shadow: 0 0 10px 0 #cad1e0;
 }
 
+
 input[type="radio"]:checked + .translate__img-wrapper, 
-input[type="radio"]:checked + .tone__text {
+input[type="radio"]:checked + .tone__text,
+input[type="radio"]:checked + .payment__img {
   border: 1px solid #77a8e0;
   box-shadow: inset 0 0 3px 3px #77a8e0;
 }
 
 input[type="radio"]:checked + .translate__img-wrapper::after,
-input[type="radio"]:checked + .tone__text::after {
+input[type="radio"]:checked + .tone__text::after,
+input[type="radio"]:checked + .payment__img::after {
   position: absolute;
   top: -12px;
   right: -12px;
