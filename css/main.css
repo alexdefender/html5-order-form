@@ -32,7 +32,7 @@ body {
   position: absolute;
 }
 
-.link__back {
+.icon__back {
   background-image: url(../font/icon-back.png);
   left: 20px;
   top: 17px;
@@ -44,7 +44,8 @@ body {
   left: 20px;
 }
 
-.btn, .header__back {
+.btn,
+.header__back {
   position: relative;
   background-color: #ebedf2;
   border: 1px solid #cad1e0;
@@ -57,7 +58,8 @@ body {
   color: #a5abc4;
 }
 
-.btn:hover, .header__back:hover {
+.btn:hover,
+.header__back:hover {
   border-color: #77a8e0;
   will-change: border-color;
   transition: border-color 0.3s ease-out;
@@ -67,18 +69,15 @@ body {
 .header__back {
   padding-top: 17px;
   padding-bottom: 25px;
-  width: 110px;
+  width: 110px; 
 }
-
 
 .header__back-text {
   position: absolute;
   color: #a5abc4;
   text-decoration: none;
   left: 50px;
-  
 }
-
 
 /* ----------------- Start Form ----------------- */
 
@@ -134,9 +133,13 @@ body {
 .translate__input:focus + .translate__img-wrapper,
 .upload__file-hidden:focus + .upload__file,
 .tone__input:focus + .tone__text,
-.translate__input:focus + .payment__img,
+.payment__input-radio:focus + .payment__img,
 .language-select:focus {
-  outline: 2px solid #77a8e0; 
+  outline: 2px solid #77a8e0;
+}
+
+.a-link:focus {
+  border: 2px solid #77a8e0;
 }
 
 footer {
